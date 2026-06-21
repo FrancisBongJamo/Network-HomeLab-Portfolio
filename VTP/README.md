@@ -6,7 +6,7 @@ This directory documents an automated multi-switch local area network architectu
 
 Below is the network topology map showcasing the star-topology distribution layout and active trunk transport pathways:
 
-![VTP Distribution Topology](ss-vtp-topology.png)
+![VTP Distribution Topology](ss-vtp-topolgy.png)
 
 ### Administrative Profile
 * **VTP Domain Name:** `ccnaph`
