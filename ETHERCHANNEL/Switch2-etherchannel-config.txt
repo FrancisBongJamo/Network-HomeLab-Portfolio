@@ -1,0 +1,171 @@
+Switch2#show run
+Building configuration...
+
+Current configuration : 2390 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Switch2
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+no ip domain-lookup
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface Port-channel2
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface Port-channel3
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface FastEthernet0/1
+ switchport trunk native vlan 99
+ switchport mode trunk
+ channel-group 2 mode passive
+!
+interface FastEthernet0/2
+ switchport trunk native vlan 99
+ switchport mode trunk
+ channel-group 2 mode passive
+!
+interface FastEthernet0/3
+ switchport trunk native vlan 99
+ switchport mode trunk
+ channel-group 3 mode active
+!
+interface FastEthernet0/4
+ switchport trunk native vlan 99
+ switchport mode trunk
+ channel-group 3 mode active
+!
+interface FastEthernet0/5
+ shutdown
+!
+interface FastEthernet0/6
+ shutdown
+!
+interface FastEthernet0/7
+ shutdown
+!
+interface FastEthernet0/8
+ shutdown
+!
+interface FastEthernet0/9
+ shutdown
+!
+interface FastEthernet0/10
+ shutdown
+!
+interface FastEthernet0/11
+ shutdown
+!
+interface FastEthernet0/12
+ shutdown
+!
+interface FastEthernet0/13
+ shutdown
+!
+interface FastEthernet0/14
+ shutdown
+!
+interface FastEthernet0/15
+ shutdown
+!
+interface FastEthernet0/16
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/17
+ shutdown
+!
+interface FastEthernet0/18
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/19
+ shutdown
+!
+interface FastEthernet0/20
+ shutdown
+!
+interface FastEthernet0/21
+ shutdown
+!
+interface FastEthernet0/22
+ shutdown
+!
+interface FastEthernet0/23
+ shutdown
+!
+interface FastEthernet0/24
+ shutdown
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan99
+ description Management_VLAN
+ ip address 192.168.99.12 255.255.255.0
+!
+banner motd ^C
+========================================================================================
+Unauthorized person is not allowed here. You are being monitored.
+========================================================================================
+^C
+!
+!
+!
+line con 0
+ password 7 0822455D0A16
+ logging synchronous
+ login
+!
+line vty 0 4
+ password 7 0822455D0A16
+ logging synchronous
+ login
+line vty 5 15
+ password 7 0822455D0A16
+ login
+!
+!
+!
+!
+end
+
+
+Switch2#show eth
+Switch2#show etherchannel 
+                Channel-group listing:
+                ----------------------
+
+Group: 2
+----------
+Group state = L2
+Ports: 2 Maxports = 16
+Port-channels: 1 Max Port-channels = 16
+Protocol:   LACP
+
+Group: 3
+----------
+Group state = L2
+Ports: 2 Maxports = 16
+Port-channels: 1 Max Port-channels = 16
+Protocol:   LACP
+Switch2#
