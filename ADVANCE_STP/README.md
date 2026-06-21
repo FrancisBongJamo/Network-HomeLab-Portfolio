@@ -5,10 +5,10 @@
 This project demonstrates a standard 3-tier hierarchical network design (Core, Distribution, and Access layers) simulated in Cisco Packet Tracer. It highlights how Per-VLAN Spanning Tree Plus (PVST+) automatically calculates primary forward paths and blocks redundant links to prevent dangerous Layer 2 switching loops.
 
 ### 📍 Topology Diagram
-![Network Topology](./ADVANCE_STP/ss-topology.png)
+![Network Topology](ss-topology.png)
 
 ### 📊 Connection Map & Device Layout
-![Connection Labels]([./ADVANCE_STP/ss-connection-label-and-devices.png](https://github.com/FrancisBongJamo/Network-HomeLab-Portfolio/blob/main/ADVANCE_STP/ss-connection-label-and-devices.png))
+![Connection Labels](ss-connection-label-and-devices.png)
 
 ---
 
