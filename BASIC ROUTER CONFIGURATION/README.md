@@ -35,5 +35,5 @@ For testing and verification purposes within the `.pkt` simulation, the followin
 
 | File Name | Description |
 | :--- | :--- |
-| `Router1-config.txt` | Core running-config for Router 1 including Loopback infrastructure. |
-| `Router2-config.txt` | Core running-config for Router 2 with opposing transit point IP assignments. |
+| `router1-basic-config.txt` | Core running-config for Router 1 including Loopback infrastructure. |
+| `router2-basic-config.txt` | Core running-config for Router 2 with opposing transit point IP assignments. |
