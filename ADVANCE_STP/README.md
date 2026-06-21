@@ -8,7 +8,7 @@ This project demonstrates a standard 3-tier hierarchical network design (Core, D
 ![Network Topology](./ADVANCE_STP/ss-topology.png)
 
 ### 📊 Connection Map & Device Layout
-![Connection Labels](./ADVANCE_STP/ss-connection-label-and-devices.png)
+![Connection Labels]([./ADVANCE_STP/ss-connection-label-and-devices.png](https://github.com/FrancisBongJamo/Network-HomeLab-Portfolio/blob/main/ADVANCE_STP/ss-connection-label-and-devices.png))
 
 ---
 
