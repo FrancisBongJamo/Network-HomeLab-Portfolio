@@ -2,7 +2,7 @@
 
 This directory documents a local networking environment simulated in Cisco Packet Tracer. The configuration establishes a Cisco 2811 Integrated Services Router (**Router0**) as a centralized dynamic addressing authority utilizing Cisco IOS DHCP server pools to assign IP configurations cleanly to end-user workstations.
 
-## 📍 Network Topology
+##  Network Topology
 
 Below is the infrastructure interconnect design detailing the interface distribution points and lease targets:
 
@@ -28,4 +28,4 @@ To systematically allocate parameters without network duplication, the router co
 
 | File Name | Description |
 | :--- | :--- |
-| `Router0-dhcp-config.txt` | Core router configuration file running active DHCP server daemons. |
+| `dhcp-demo-I.txt` | Core router configuration file running active DHCP server daemons. |
