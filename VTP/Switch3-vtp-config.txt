@@ -1,0 +1,113 @@
+Switch3#show running-config 
+Building configuration...
+
+Current configuration : 1130 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch3
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ description SWITCH# f0/4
+ switchport mode trunk
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+!
+!
+end
+
+
+Switch3#show vtp sta
+Switch3#show vtp status 
+VTP Version capable             : 1 to 2
+VTP version running             : 2
+VTP Domain Name                 : ccnaph
+VTP Pruning Mode                : Disabled
+VTP Traps Generation            : Disabled
+Device ID                       : 00D0.975D.1C00
+Configuration last modified by 0.0.0.0 at 3-1-93 00:00:00
+
+Feature VLAN : 
+--------------
+VTP Operating Mode                : Client
+Maximum VLANs supported locally   : 255
+Number of existing VLANs          : 9
+Configuration Revision            : 17
+MD5 digest                        : 0xCD 0x7F 0xF5 0xF7 0x8F 0xF9 0x72 0x77 
+                                    0x12 0xB2 0x17 0x2C 0x16 0xEE 0x74 0x02 
+Switch3#
