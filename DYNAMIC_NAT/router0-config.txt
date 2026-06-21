@@ -1,0 +1,90 @@
+Building configuration...
+
+Current configuration : 910 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router0
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10170T9A-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ description TO_INTERNET
+ ip address 40.40.40.1 255.255.255.0
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ description INSIDE
+ ip address 192.168.1.254 255.255.255.0
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip nat pool swimmingpool 40.40.40.1 40.40.40.6 netmask 255.255.255.248
+ip nat inside source list 25 pool swimmingpool
+ip classless
+ip route 0.0.0.0 0.0.0.0 40.40.40.10 
+!
+ip flow-export version 9
+!
+!
+access-list 25 permit 192.168.1.0 0.0.0.255
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+
+Router0#
