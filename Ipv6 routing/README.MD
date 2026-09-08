@@ -6,7 +6,7 @@ A dual-stack network implementation built in Cisco Packet Tracer to practice IPv
 
 ### Network Topology
 
-![Network Topology](Screenshots/topology.png)
+![Network Topology](Screenshots/00_topology.png)
 
 This lab simulates a small enterprise network consisting of two LANs connected through two Cisco routers.
 
