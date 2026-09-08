@@ -4,6 +4,12 @@ A dual-stack network implementation built in Cisco Packet Tracer to practice IPv
 
 ## 📌 Project Overview
 
+## 📸 Screenshots
+
+### Network Topology
+
+![Network Topology](Screenshots/topology.png)
+
 This lab simulates a small enterprise network consisting of two LANs connected through two Cisco routers.
 
 The objective was to establish end-to-end communication between two PCs using both IPv4 and IPv6.
