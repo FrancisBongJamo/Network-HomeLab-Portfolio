@@ -2,9 +2,7 @@
 
 A dual-stack network implementation built in Cisco Packet Tracer to practice IPv4 and IPv6 addressing, IPv6 EUI-64, VLAN configuration, and static routing.
 
-## 📌 Project Overview
-
-## 📸 Screenshots
+##  Project Overview
 
 ### Network Topology
 
