@@ -1,0 +1,88 @@
+Building configuration...
+
+Current configuration : 863 bytes
+!
+version 16.6.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router2
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 192.168.20.1 255.255.255.0
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:20::/64 eui-64
+!
+interface GigabitEthernet0/0/1
+ ip address 10.0.0.2 255.255.255.252
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:12::/64 eui-64
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+!
+ip classless
+ip route 192.168.10.0 255.255.255.0 10.0.0.1 
+!
+ip flow-export version 9
+!
+ipv6 route 2001:DB8:10::/64 2001:DB8:12:0:2D0:58FF:FE73:BC02
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
+
+Router2# 
